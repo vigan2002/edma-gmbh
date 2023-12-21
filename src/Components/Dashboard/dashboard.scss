@@ -1,0 +1,21 @@
+.dashboard {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding-top: 100px;
+
+    .dashboard h2 {
+        color: #333;
+    }
+
+    .dashboard-content {
+        margin-top: 10px;
+
+        h3 {
+            color: #555;
+        }
+    }
+
+}

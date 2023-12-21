@@ -1,0 +1,104 @@
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    .contact-wrapper {
+        margin: 100px 0;
+        width: 65%;
+        h1{
+            color: rgb(219, 30, 50);
+            font-size: 36px;
+            font-weight: 500;
+            margin: 0;
+        }
+        p{
+            color: gray;
+            font-size: 16px;
+        }
+        h4{
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        .contact-form{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+            .info{
+                width: 40%;
+                h2{
+                    margin: 20px 0;
+                    font-size: 20px;
+                }
+            }
+            .contact-form-wrapper{
+                width: 40%;
+                form {
+                    display: flex;
+                    flex-direction: column;
+        
+                    input {
+                        margin-bottom: 15px;
+                        padding: 12px 20px;
+                        background-color: #eee;
+                        border: 1px solid #888888;
+                        border-radius: 4px;
+                    }
+                    textarea{
+                        height: 150px;
+                        padding: 12px 20px;
+                        box-sizing: border-box;
+                        border: 1px solid #888888;
+                        border-radius: 4px;
+                        background-color: #eee;
+                        font-size: 16px;
+                        resize: none;
+                        margin-bottom: 20px;
+                    }
+
+                    button {
+                        background-color: rgb(219, 30, 50);
+                        border: none;
+                        border-radius: 4px;
+                        width: 170px;
+                        height: 50px;
+                        font-size: 14px;
+                        color: #fff;
+                        cursor: pointer;
+                        transition: background-color 0.7s, color 0.7s;
+        
+                        &:hover {
+                            border: 1px solid rgb(219, 30, 50);
+                            color: rgb(219, 30, 50);
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}
+@media (max-width: 768px) {
+    .contact{
+        .contact-wrapper{
+            width: 90%;
+            .contact-form{
+                display: flex;
+                flex-direction: column;
+                .info{
+                    width: 100%;
+                }
+                .contact-form-wrapper{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
